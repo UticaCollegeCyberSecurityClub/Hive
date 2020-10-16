@@ -21,3 +21,9 @@ Get-EventLog -LogName System -Newest 10
 Get-EventLog -LogName System -After "09/28/2015" -Before "09/29/20115" | Where-Object {$_.EntryType -like 'Error' -or $_.EntryType -like 'Warning'}
 ```
 
+# Display newest log entries
+By using “Newest” parameter we can display newest log entries from the given group. It needs the integer value. For example, to display newest 10 entries; you need to pass 10 as the value to the parameter “Newest“.
+
+```
+Get-EventLog -LogName System -Newest 10
+```
