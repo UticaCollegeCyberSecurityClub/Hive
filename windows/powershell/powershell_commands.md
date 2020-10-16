@@ -27,3 +27,11 @@ By using “Newest” parameter we can display newest log entries from the given
 ```
 Get-EventLog -LogName System -Newest 10
 ```
+
+# Display both Warnings and Errors
+Through “EntryType” we can pass multiple values also; and the values should be separated by a comma (“,”). Below command displays both Warnings and Errors:
+
+```
+Get-EventLog -LogName Application -EntryType "Error", "Warning"
+```
+
