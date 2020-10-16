@@ -7,8 +7,3 @@
 - https://ss64.com/nt/wevtutil.html
 - https://expert-advice.org/powershell/how-to-export-windows-event-logs-with-powershell-script/
 - https://gallery.technet.microsoft.com/scriptcenter/Failed-Logins-Report-ccf071a9
-
-```
-Wevtutil qe /lf C:\windows\panther\setup.etl 
-```
-- 
