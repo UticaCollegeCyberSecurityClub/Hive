@@ -16,7 +16,7 @@ Get-EventLog -LogName System
 Get-EventLog -LogName System -Newest 10
 ```
 
-Example #4 – Get Error and Warning Entries from local System log on a certain day
+# Example #4 – Get Error and Warning Entries from local System log on a certain day
 ```
 Get-EventLog -LogName System -After "09/28/2015" -Before "09/29/20115" | Where-Object {$_.EntryType -like 'Error' -or $_.EntryType -like 'Warning'}
 ```
