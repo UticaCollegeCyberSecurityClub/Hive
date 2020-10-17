@@ -52,6 +52,8 @@ journalctl _SYSTEMD_UNIT=ssh.service | egrep "Failed|Failure"
  journalctl _SYSTEMD_UNIT=sshd.service | egrep "Failed|Failure"
  ```
 
+# log Alert
+- https://www.dlford.io/send-email-alerts-from-linux-server
 
 # log Parser
 - https://github.com/hatRiot/logalyzer
