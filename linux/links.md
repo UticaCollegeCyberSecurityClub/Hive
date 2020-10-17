@@ -1,3 +1,4 @@
 - https://www.tecmint.com/linux-server-hardening-security-tips/
 - https://github.com/trimstray/the-practical-linux-hardening-guide
 - https://github.com/Jsitech/JShielder
+- https://www.computerworld.com/article/3144985/linux-hardening-a-15-step-checklist-for-a-secure-linux-server.html
