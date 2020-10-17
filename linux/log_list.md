@@ -24,3 +24,10 @@
 
 # /var/log/messages OR /var/log/auth
 - Red Hat-based systems like RHEL or CentOS 
+
+# Logs of last login sessions
+- /var/log/wtmp 
+# Logs of the current login sessions.
+- /var/run/utmp
+# Logs of the bad login attempts.
+- /var/log/btmp
