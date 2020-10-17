@@ -31,3 +31,25 @@
 - /var/run/utmp
 # Logs of the bad login attempts.
 - /var/log/btmp
+
+# Failed SSH LOGIN attemps
+```
+grep "Failed password" /var/log/auth.log
+cat /var/log/auth.log | grep "Failed password"
+```
+
+# Failed SSH LOGIN attemps ( CentOS or RHEL )
+```
+egrep "Failed|Failure" /var/log/secure
+grep "Failed" /var/log/secure
+grep "authentication failure" /var/log/secure
+journalctl _SYSTEMD_UNIT=ssh.service | egrep "Failed|Failure"
+```
+# Display IPS SSH LOGIN ( CentOS or RHEL )
+```
+ grep "Failed password" /var/log/auth.log | awk ‘{print $11}’ | uniq -c | sort -nr
+ 
+ journalctl _SYSTEMD_UNIT=sshd.service | egrep "Failed|Failure"
+ ```
+
+
