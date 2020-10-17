@@ -55,3 +55,4 @@ journalctl _SYSTEMD_UNIT=ssh.service | egrep "Failed|Failure"
 
 # log Parser
 - https://github.com/hatRiot/logalyzer
+- https://medium.com/@devopslearning/parsing-log-using-bash-script-ffa3d39ccbff
